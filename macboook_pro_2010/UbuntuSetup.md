@@ -8,13 +8,14 @@ This is essentially my compilation and paraphrasing of all the resources that I 
 
 1. [Make bootable USB with Ubuntu](#make-bootable-usb-with-ubuntu)
 2. [Install Ubuntu on macbook](#Install-Ubuntu-on-macbook)
-#### Change nouveau to nvidia drivers
-#### Make pci config changes
-#### Install Wifi drivers
+3. [Change nouveau to nvidia drivers](#Change-nouveau-to-nvidia-drivers)
+4. [Make pci config changes](#Make-pci-config-changes)
+5. [Install WiFi drivers](#Install-WiFi-drivers)
 
 
 #### Make bootable USB with Ubuntu
+Just make a bootable USB with Ubuntu. Follow an official link such as [this one](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0). This is the most straightforward step.
 #### Install Ubuntu on macbook
 #### Change nouveau to nvidia drivers
 #### Make pci config changes
-#### Install Wifi drivers
+#### Install WiFi drivers
