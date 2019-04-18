@@ -15,7 +15,26 @@ This is essentially my compilation and paraphrasing of all the resources that I 
 
 #### Make bootable USB with Ubuntu
 Just make a bootable USB with Ubuntu. Follow an official link such as [this one](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0). This is the most straightforward step.
+
 #### Install Ubuntu on macbook
+Shutdown the macbook if it is already not. Insert the USB. Start the macbook with option/alt button pressed. This will show you an option to boot from USB via EFI option. You can select that and install Ubuntu.
+
 #### Change nouveau to nvidia drivers
+**This is a critical step, without which GUI won't worl properly**. When Ubuntu is installed using the previous step, usually everything works fine till the login screen and after login the UI doesn't  behave properly. By default the nouveau graphics drivers are installed, which don't wort that well and also heatup the system. Acutally after this step hating issues have come down sginificantly.  
+
+##### Check which drivers are in use. I followed this [link](https://askubuntu.com/questions/271613/am-i-using-the-nouveau-driver-or-the-proprietary-nvidia-driver). One way it to use:
+```
+dpkg -l | grep -i nvidia
+lsmod | grep nouveau
+
+```
+Another way is
+```
+sudo apt install inxi
+inxi -Gx
+```
+
+
 #### Make pci config changes
+
 #### Install WiFi drivers
