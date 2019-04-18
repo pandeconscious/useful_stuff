@@ -11,6 +11,7 @@ This is essentially my compilation and paraphrasing of all the resources that I 
 3. [Change nouveau to nvidia drivers](#Change-nouveau-to-nvidia-drivers)
 4. [Make pci config changes](#Make-pci-config-changes)
 5. [Install WiFi drivers](#Install-WiFi-drivers)
+6. [Enable brightness control](#Enable-brightness-control)
 
 
 #### Make bootable USB with Ubuntu
@@ -51,3 +52,6 @@ For installing WiFi drivers I followed the [link](https://askubuntu.com/a/60395)
 ```
 sudo apt install bcmwl-kernel-source
 ```
+
+#### Enable brightness control
+I followed the Enabling brightness controls section in [this link]<http://korrekt.org/page/Note:How_to_install_(K)Ubuntu_14.04_on_Macbook_7,1#Installing_Kubuntu>
