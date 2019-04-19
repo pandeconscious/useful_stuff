@@ -55,3 +55,7 @@ sudo apt install bcmwl-kernel-source
 
 #### Enable brightness control
 I followed the Enabling brightness controls section in [this link]<http://korrekt.org/page/Note:How_to_install_(K)Ubuntu_14.04_on_Macbook_7,1#Installing_Kubuntu>
+
+#### Touchpad settings adjustments
+The touchpad doesn't work very well and is too senstitive. Essentially a startup script to use predefined settings is used. I followed [this link]<http://korrekt.org/page/Note:How_to_install_(K)Ubuntu_14.04_on_Macbook_7,1#Installing_Kubuntu> for the settings and made a startup script as mentioned in [this link](https://askubuntu.com/a/910)
+
