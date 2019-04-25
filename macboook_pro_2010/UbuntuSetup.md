@@ -21,7 +21,7 @@ Just make a bootable USB with Ubuntu. Follow an official link such as [this one]
 Shutdown the macbook if it is already not. Connect a live ethernet cable for the internet connectivity because WiFi won't work by default. Insert the USB. Start the macbook with option/alt button pressed. This will show you an option to boot from USB via EFI option. You can select that and install Ubuntu.
 
 #### Change nouveau to nvidia drivers
-**This is a critical step, without which GUI won't worl properly**. When Ubuntu is installed using the previous step, usually everything works fine till the login screen and after login the UI doesn't  behave properly. By default the nouveau graphics drivers are installed, which don't wort that well and also heatup the system. Acutally after this step hating issues have come down sginificantly.  
+**This is a critical step, without which GUI won't worl properly**. When Ubuntu is installed using the previous step, usually everything works fine till the login screen and after login the UI doesn't  behave properly. By default the nouveau graphics drivers are installed, which don't work that well and also heatup the system. Acutally after this step heating issues have come down sginificantly.  
 
 ##### Check which drivers are in use. 
 I followed this [link](https://askubuntu.com/questions/271613/am-i-using-the-nouveau-driver-or-the-proprietary-nvidia-driver). One way it to use:
@@ -39,7 +39,7 @@ inxi -Gx
 By default nouveau drivers should be running. For this machine nvidia-331 drivers are needed for optimal graphics rendering and in the next step we will just install that.
 
 ##### Install nvidia drivers
-I followed this [link](https://tech.amikelive.com/node-731/how-to-properly-install-nvidia-graphics-driver-on-ubuntu-16-04/).In step 8 I used nvidia-331 instead of 390, rest is same.
+I followed this [link](https://tech.amikelive.com/node-731/how-to-properly-install-nvidia-graphics-driver-on-ubuntu-16-04/).In step 8 I used nvidia-331 instead of 390, rest is same but don't reboot now as in the link. We will reboot after the next step of pci config changes.
 ```
 sudo apt-get install nvidia-331
 ```
